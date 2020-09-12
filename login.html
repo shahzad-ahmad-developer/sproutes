@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>sproutes.co</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container row">
+        <div class="col-md-6 main-logo-div">
+            <img class="main-logo" src="logo/logo_black.png" style="max-width: 175px; max-height: 125px">
+        </div>
+        <div class="col-md-6" id="logreg-forms">
+            <form class="form-signin">
+                <h1 class="h3 font-weight-normal" style="text-align: left">Sign in</h1>
+                <div class="row ml-0 col-md-12 p-0">
+                    <small>Don't have an account?</small><small><a href="javascript:;" id="btn-signup" class="anchor_create_account">Join our community</a></small>
+                </div>
+                <br>
+                <div id="email_div" class="row ml-0 col-md-12 p-0">
+                    <label for="inputEmail" class="mb-0 small col-md-12 p-0">Email address</label>
+                    <input type="email" id="inputEmail" class="form-control col-md-12" name="email" required="true" autofocus="">
+                </div>
+                <div id="password_div" class="row ml-0 col-md-12 p-0 mt-4">
+                    <label for="inputPassword" class="mb-0 mt-0 small col-md-12 p-0">Password</label>
+                    <input type="password" id="inputPassword" name="password" class="form-control col-md-12" required="">
+                </div>
+                <button id="sign_in_btn" class="col-md-12 btn btn-primary btn-block login_btn btn-sm" type="submit">Sign in</button>
+                <div class="mt-4" style="text-align:right">    
+                <a href="#" class="small mb-4 anchor_create_account" style="float:right">Forgot Password?</a>
+                </div>
+                <button class="col-md-12 google-btn btn btn-primary btn-block social-btn btn-sm" type="submit"><i class="fab fa-google"></i>Continue with
+                    Google</button>
+                <button class="col-md-12 facebook-btn btn btn-primary btn-block social-btn btn-sm" type="submit"><i class="fab fa-facebook-f"></i>Continue with Facebook</button>
+               </form>
+            <form action="/signup/" class="form-signup">
+                <h3 class="h3 font-weight-normal create_head" style="text-align: left">Create an account</h3>
+                <div class="row ml-0">
+                    <p class="small exist exist_cancel_signup">Already part of our community? </p><a href="javascript:;" class="cancel_signup anchor_create_account small sign_in_link">Sign in</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label class="small mb-0" for="user-email">Email address</label>
+                        <input type="email" id="user-email" class="form-control" required autofocus="">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-12">
+                        <label class="small mb-0" for="first-name">First Name</label>
+                        <input type="text" id="first-name" class="form-control" required="" autofocus="">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-12 last_name_div">
+                        <label class="small mb-0" for="last-name">Last name</label>
+                        <input type="text" id="last-name" class="form-control" required="" autofocus="">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-12">
+                        <label class="small mb-0" for="user-pass">Password</label>
+                        <input type="password" id="user-pass" class="form-control" required autofocus="">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="mb-0 small ml-3">Date of Birth</p>
+                </div>
+                <div class="row mt-2 mb-2 col-md-12 m-0 p-0">
+                    <div class="col-lg-4 p-0" id="day-div">
+                        <label class="small mb-0 col-3 p-0" for="dob_day">Day</label>
+                        <select class="small" id="day"></select>
+                    </div>
+                    <div class="col-lg-5 p-0">
+                        <label class="small mb-0 col-3 p-0" for="dob_month">Month</label>
+                        <select class="small" id="month"></select>
+                    </div>
+                    <div class="col-lg-3 p-0">
+                        <label class="small mb-0 col-3 p-0" for="dob_year">Year</label>
+                        <select class="small" id="year"></select>
+                    </div>
+                </div>
+                <div class="row small ml-0 mt-4" id="agree_user">
+                    <p>By creating your account with us, you agree to our
+                        <a style="display: inline;" href="javascript:;" class="m-0 anchor_create_account">
+                            Terms of Use
+                        </a>
+                        <span>and</span>
+                        <a style="display: inline;" href="javascript:;" class="m-0 anchor_create_account">
+                            Privacy Policy.
+                        </a>
+                    </p>
+                </div>
+
+                <button id="create_account" class="btn btn-success btn-block login_btn btn-sm mt-3" type="submit">Create account</button>
+                <a href="#" class="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
+            </form>
+        </div>        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+    <script src="js/dob.js"></script>
+</body>
+</html>

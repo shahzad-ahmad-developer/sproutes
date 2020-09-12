@@ -1,0 +1,308 @@
+
+.form-control::placeholder {
+    font-size: 12px;
+}
+
+html
+{
+    /*overflow: hidden;*/
+}
+
+body
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    height: 100%;
+}
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    height: 100%!important;
+    margin: auto!important;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.main-logo {
+    position: relative;
+    top: 50%;
+}
+
+#continue_btn, #create_account, #sign_in_btn{
+    border-radius: 20px;
+}
+
+#create_account:active, #create_account:focus {
+    text-decoration: none;
+    background-color: #6398cc;
+    border-color: #6398cc;
+    box-shadow: none;
+}
+
+.form-signin {
+    background-color: white;
+    padding: 20px;
+}
+
+.form-signin .btn.login_btn {
+    background-color: #6398cc;
+    border-color: #6398cc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    float: right;
+}
+.cancel_signup {
+    margin-top: 30px;
+    color: #6398cc;
+    text-decoration: none;
+}
+
+.form-signup .btn.login_btn {
+    background-color: #6398cc;
+    border-color: #6398cc;
+    float: right;
+    margin-bottom: 30px;
+    margin-top: 0;
+    width: 140px;
+}
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.fab {
+    margin-right: 10px;
+}
+
+/* sign in FORM */
+#logreg-forms {
+    margin: auto;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#be_icon {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+}
+#be_text {
+    color: revert;
+    margin-left: 15px;
+    font-size: 35px;
+    font-family: monospace;
+}
+#behance_text_div {
+    bottom: 0;
+    height: 100px;
+    position: absolute;
+    top: 12%;
+    left: -9%;
+    font-size: 30px;
+    right: 0;
+    margin: 20%;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#logreg-forms form {
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+#logreg-forms .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+#logreg-forms .form-control:focus { z-index: 2; }
+
+#logreg-forms .social-login{
+    width:390px;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom: 14px;
+}
+#logreg-forms .social-btn{
+    font-weight: 100;
+    color:white;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    border-radius: 20px
+}
+
+#logreg-forms a{
+    display: block;
+}
+
+#logreg-form .lines{
+    width:200px;
+    border:1px solid red;
+}
+.anchor_create_account {
+    /*margin-left: 4px;*/
+    margin-top: 0;
+}
+#label_contact_me_via_email {
+    line-height: 1;
+    margin-left: 5px;
+}
+
+
+#logreg-forms .facebook-btn{  background-color:#3C589C; }
+#logreg-forms .apple-btn{  background-color:black; }
+
+#logreg-forms .google-btn{
+    color: black;
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+
+#logreg-forms .form-reset, #logreg-forms .form-signup{ display: none; }
+
+#logreg-forms .form-signup .social-btn{ width:210px; }
+
+#logreg-forms .form-signup input { margin-bottom: 2px;}
+
+.form-signup .social-login{
+    width:210px !important;
+    margin: 0 auto;
+}
+
+#inputEmail, #inputPassword, #user-email, #first-name, #last-name, #user-pass,
+#dob_month, #dob_day, #dob_year, #country,
+#user-email:focus, #first-name:focus, #last-name:focus, #user-pass:focus,
+#user-email:hover, #first-name:hover, #last-name:hover, #user-pass:hover,
+#country:hover, #country:focus    {
+    border: none;
+    border-bottom: 1px solid #B0B0B0;
+    border-radius: 0;
+    padding: 0 !important;
+    box-shadow: none;
+}
+.anchor_create_account {
+    text-decoration: none;
+    color: #6398cc;
+    /*margin-left: 4px;*/
+    margin-top: 0;
+}
+
+.form-signin, .form-signup {
+    max-width: 410px;
+    /*height: 500px;*/
+}
+
+select#month, select#day, select#year {
+    text-transform: none;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid #B0B0B0;
+    font-weight: normal;
+}
+@media only screen and (max-width: 720px) {
+    .container {
+        height: min-content!important;
+    }
+    .main-logo {
+    position: unset;
+    margin-bottom: 5px;    
+    }
+
+    .main-logo-div {
+    text-align: center;
+    }
+
+    .form-signin, .form-signup {
+        height: max-content;
+        max-height: max-content;
+    }
+    #logreg-forms .form-signup input {
+        margin-bottom: 0!important;
+    }
+}
+.anchor_create_account.cancel_signup {
+    margin-left: 0.2em;
+}
+.anchor_create_account#btn-signup {
+    margin-left: 0.2em;
+}
+@media only screen and (max-width: 367px) {
+    .anchor_create_account#btn-signup {
+        margin-left: 0!important;
+    }
+}
+@media only screen and (max-width: 283px) {
+    .anchor_create_account.cancel_signup {
+        margin-left: 0!important;
+    }
+    .exist_cancel_signup {
+        margin-right: 4px !important;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 324px) {
+    .anchor_create_account.cancel_signup {
+        margin-left: 0!important;
+    }
+    .exist_cancel_signup {
+        margin-right: 4px !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .main-logo {
+    position: unset;
+    margin-bottom: 5px;    
+    }
+    .main-logo-div {
+    text-align: center;
+    }
+
+    .form-signin, .form-signup {
+        height: max-content;
+        max-height: max-content;
+    }
+    #day-div {
+        padding-left: 0!important;
+    }
+
+    .exist {
+        margin-bottom: 1px!important;
+    }
+    #agree_user {
+        margin-top: 1px!important;
+    }
+    .create_head {
+        font-size: 1.5rem!important;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .form-signup {
+        height: 507px!important;
+        padding-bottom: 0!important;
+        padding-top: 10px!important;
+    }
+    .cancel_signup, #create_account {
+        margin-top: 0!important;
+        margin-right: -10px;
+    }
+    #logreg-forms {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .sign_in_link {
+        /*margin-left: 4px!important;*/
+    }
+}
