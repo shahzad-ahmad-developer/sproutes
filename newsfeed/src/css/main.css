@@ -15138,6 +15138,7 @@ div.mejs-speed-button {
   -webkit-flex-shrink: 0;
   -ms-flex: 0 0 auto;
   flex-shrink: 0;
+    margin: auto;
   width: 100%;
   height: 100%;
   position: relative; }
