@@ -25,7 +25,6 @@ section h1 {
     color: #fff;
     font : normal 300 64px/1 'Josefin Sans', sans-serif;
     text-align: center;
-    white-space: nowrap;
 }
 #section01 h1, #section04 h1, #section05 h1 {
     position: absolute;
@@ -36,11 +35,11 @@ section h1 {
     transform: translate(-50%, -50%);
 }
 
-#section01 { background-color: #855ACD}
-#section02 { background-color: #F88A2B}
-#section03 { background-color: #7CBDFC}
-#section04 { background-color: #73E93D}
-#section05 { background-color: #32A7BE}
+#section01 { background-image: url("../images/cropped/1.png"); background-repeat: no-repeat; background-size: cover;}
+#section02 { background-image: url("../images/cropped/2.png"); background-repeat: no-repeat; background-size: cover;}
+#section03 { background-image: url("../images/cropped/3.png"); background-repeat: no-repeat; background-size: cover;}
+#section04 { background-image: url("../images/cropped/4.png"); background-repeat: no-repeat; background-size: cover;}
+#section05 { background-image: url("../images/cropped/5.png"); background-repeat: no-repeat; background-size: cover;}
 
 .demo a {
     position: absolute;
